@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E6E17832055D09400322E5C /* fa-brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E6E17812055D09400322E5C /* fa-brands.ttf */; };
+		3E6E17842055D09400322E5C /* fa-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E6E17822055D09400322E5C /* fa-regular.ttf */; };
 		3E88765C2055CE8B00F0B511 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E88765B2055CE8B00F0B511 /* AppDelegate.swift */; };
 		3E88765E2055CE8B00F0B511 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E88765D2055CE8B00F0B511 /* ViewController.swift */; };
 		3E8876612055CE8B00F0B511 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E88765F2055CE8B00F0B511 /* Main.storyboard */; };
@@ -34,7 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3E8876582055CE8B00F0B511 /* Matched-Betting-Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Matched-Betting-Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E6E17812055D09400322E5C /* fa-brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "fa-brands.ttf"; path = "fonts/fa-brands.ttf"; sourceTree = "<group>"; };
+		3E6E17822055D09400322E5C /* fa-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "fa-regular.ttf"; path = "fonts/fa-regular.ttf"; sourceTree = "<group>"; };
+		3E8876582055CE8B00F0B511 /* MBcalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MBcalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E88765B2055CE8B00F0B511 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E88765D2055CE8B00F0B511 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3E8876602055CE8B00F0B511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -77,6 +81,8 @@
 		3E88764F2055CE8B00F0B511 = {
 			isa = PBXGroup;
 			children = (
+				3E6E17812055D09400322E5C /* fa-brands.ttf */,
+				3E6E17822055D09400322E5C /* fa-regular.ttf */,
 				3E88765A2055CE8B00F0B511 /* Matched-Betting-Calculator */,
 				3E88766F2055CE8B00F0B511 /* Matched-Betting-CalculatorTests */,
 				3E88767A2055CE8B00F0B511 /* Matched-Betting-CalculatorUITests */,
@@ -87,7 +93,7 @@
 		3E8876592055CE8B00F0B511 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3E8876582055CE8B00F0B511 /* Matched-Betting-Calculator.app */,
+				3E8876582055CE8B00F0B511 /* MBcalc.app */,
 				3E88766C2055CE8B00F0B511 /* Matched-Betting-CalculatorTests.xctest */,
 				3E8876772055CE8B00F0B511 /* Matched-Betting-CalculatorUITests.xctest */,
 			);
@@ -142,7 +148,7 @@
 			);
 			name = "Matched-Betting-Calculator";
 			productName = "Matched-Betting-Calculator";
-			productReference = 3E8876582055CE8B00F0B511 /* Matched-Betting-Calculator.app */;
+			productReference = 3E8876582055CE8B00F0B511 /* MBcalc.app */;
 			productType = "com.apple.product-type.application";
 		};
 		3E88766B2055CE8B00F0B511 /* Matched-Betting-CalculatorTests */ = {
@@ -235,6 +241,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E6E17832055D09400322E5C /* fa-brands.ttf in Resources */,
+				3E6E17842055D09400322E5C /* fa-regular.ttf in Resources */,
 				3E8876662055CE8B00F0B511 /* LaunchScreen.storyboard in Resources */,
 				3E8876632055CE8B00F0B511 /* Assets.xcassets in Resources */,
 				3E8876612055CE8B00F0B511 /* Main.storyboard in Resources */,
@@ -359,7 +367,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -404,7 +412,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -419,9 +427,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9Q64SBCE75;
 				INFOPLIST_FILE = "Matched-Betting-Calculator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "fedemengo.Matched-Betting-Calculator";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MBcalc;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -432,9 +441,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9Q64SBCE75;
 				INFOPLIST_FILE = "Matched-Betting-Calculator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "fedemengo.Matched-Betting-Calculator";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MBcalc;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -516,6 +526,7 @@
 				3E8876822055CE8B00F0B511 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3E8876832055CE8B00F0B511 /* Build configuration list for PBXNativeTarget "Matched-Betting-CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +535,7 @@
 				3E8876852055CE8B00F0B511 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3E8876862055CE8B00F0B511 /* Build configuration list for PBXNativeTarget "Matched-Betting-CalculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +544,7 @@
 				3E8876882055CE8B00F0B511 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
