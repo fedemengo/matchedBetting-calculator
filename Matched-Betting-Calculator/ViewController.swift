@@ -43,7 +43,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        author.text = " @fedemengo"
+        author.text = "\u{f09b} @fedemengo"
         
         //calc.layer.cornerRadius = 5;
     }
