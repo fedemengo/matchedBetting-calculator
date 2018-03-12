@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3E6E17832055D09400322E5C /* fa-brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E6E17812055D09400322E5C /* fa-brands.ttf */; };
 		3E6E17842055D09400322E5C /* fa-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E6E17822055D09400322E5C /* fa-regular.ttf */; };
+		3E7C1CE62056601E00B9C039 /* RatioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C1CE52056601E00B9C039 /* RatioButton.swift */; };
 		3E88765C2055CE8B00F0B511 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E88765B2055CE8B00F0B511 /* AppDelegate.swift */; };
 		3E88765E2055CE8B00F0B511 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E88765D2055CE8B00F0B511 /* ViewController.swift */; };
 		3E8876612055CE8B00F0B511 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E88765F2055CE8B00F0B511 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		3E6E17812055D09400322E5C /* fa-brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "fa-brands.ttf"; path = "fonts/fa-brands.ttf"; sourceTree = "<group>"; };
 		3E6E17822055D09400322E5C /* fa-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "fa-regular.ttf"; path = "fonts/fa-regular.ttf"; sourceTree = "<group>"; };
+		3E7C1CE52056601E00B9C039 /* RatioButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatioButton.swift; sourceTree = "<group>"; };
 		3E8876582055CE8B00F0B511 /* MBcalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MBcalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E88765B2055CE8B00F0B511 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E88765D2055CE8B00F0B511 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				3E8876622055CE8B00F0B511 /* Assets.xcassets */,
 				3E8876642055CE8B00F0B511 /* LaunchScreen.storyboard */,
 				3E8876672055CE8B00F0B511 /* Info.plist */,
+				3E7C1CE52056601E00B9C039 /* RatioButton.swift */,
 			);
 			path = "Matched-Betting-Calculator";
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E88765E2055CE8B00F0B511 /* ViewController.swift in Sources */,
+				3E7C1CE62056601E00B9C039 /* RatioButton.swift in Sources */,
 				3E88765C2055CE8B00F0B511 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

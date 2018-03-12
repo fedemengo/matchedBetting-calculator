@@ -27,6 +27,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var author: UILabel!
     
+    @IBOutlet var qualifyingBetButton: RatioButton!
+    @IBOutlet var freeBetButton: RatioButton!
+    
     //@IBOutlet weak var calc: UIButton!
     
     /*
@@ -45,7 +48,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         author.text = "\u{f09b} @fedemengo"
         
-        //calc.layer.cornerRadius = 5;
+        qualifyingBetButton.layer.cornerRadius = qualifyingBetButton.frame.width/2
+        freeBetButton.layer.cornerRadius = freeBetButton.frame.width/2
+        
+        qualifyingBetButton.isSelected = true
+        freeBetButton.isSelected = false
+        
+        qualifyingBetButton?.buttons = [freeBetButton!]
+        freeBetButton?.buttons = [qualifyingBetButton!]
     }
     
     override func didReceiveMemoryWarning() {
@@ -64,6 +74,7 @@ class ViewController: UIViewController {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        print("touch intercepted")
         resignFirstResponder()
     }
     
