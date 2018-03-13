@@ -11,20 +11,19 @@ import UIKit
 
 class RatioButton : UIButton {
     
-    var buttons:Array<RatioButton>?
-    var buttonIsSelected: Bool?
+    var buttons: Array<RatioButton>?
+    var bet: BET!
     
     func unselectButtons(){
         
         if buttons != nil {
-            
             self.isSelected = true
             
             for aButton:RatioButton in buttons! {
                 aButton.isSelected = false
             }
-            
-        } else {
+        }
+        else {
             toggleButton()
         }
     }
@@ -34,7 +33,6 @@ class RatioButton : UIButton {
             if(isSelected){
                 self.backgroundColor = UIColor.green
                 self.setTitleColor(UIColor.black, for: UIControlState.normal)
-                print(self.titleLabel!.text! + " is selected")
             }
             else {
                 self.backgroundColor = UIColor.lightGray
