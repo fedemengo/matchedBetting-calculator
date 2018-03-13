@@ -93,6 +93,7 @@
                                                                     </label>
                                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iS4-ln-4ib">
                                                                         <rect key="frame" x="263" y="2.5" width="80" height="30"/>
+                                                                        <color key="tintColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="80" id="c6Z-G2-qVD"/>
                                                                         </constraints>
@@ -113,6 +114,7 @@
                                                                     </label>
                                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lac-En-jqy">
                                                                         <rect key="frame" x="263" y="2.5" width="80" height="30"/>
+                                                                        <color key="tintColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="80" id="yx5-0I-JrS"/>
                                                                         </constraints>
@@ -133,6 +135,7 @@
                                                                     </label>
                                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cKS-Yq-bMi">
                                                                         <rect key="frame" x="293" y="2.5" width="50" height="30"/>
+                                                                        <color key="tintColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="50" id="neB-vn-QR8"/>
                                                                         </constraints>
@@ -161,6 +164,7 @@
                                                                     </label>
                                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Hf-WR-jTF">
                                                                         <rect key="frame" x="263" y="2.5" width="80" height="30"/>
+                                                                        <color key="tintColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="80" id="HH5-De-oHs"/>
                                                                         </constraints>
@@ -181,6 +185,7 @@
                                                                     </label>
                                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Ed-SB-5LF">
                                                                         <rect key="frame" x="293" y="2.5" width="50" height="30"/>
+                                                                        <color key="tintColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="50" id="aOI-2V-fZ9"/>
                                                                         </constraints>
@@ -340,7 +345,7 @@
                         <outlet property="layStake" destination="dO7-Ru-pAc" id="f8r-2Q-cHo"/>
                         <outlet property="layWin" destination="AU0-ZD-BgZ" id="g8g-fp-EEM"/>
                         <outlet property="profit" destination="D5Q-Hq-Uhr" id="YRD-br-29l"/>
-                        <outlet property="qualifyingBetButton" destination="NWZ-fd-knF" id="8rn-TP-9Fk"/>
+                        <outlet property="qualBetButton" destination="NWZ-fd-knF" id="6ft-4z-jyW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
