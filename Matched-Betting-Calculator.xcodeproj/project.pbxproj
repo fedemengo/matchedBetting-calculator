@@ -17,6 +17,9 @@
 		3E8876662055CE8B00F0B511 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E8876642055CE8B00F0B511 /* LaunchScreen.storyboard */; };
 		3E8876712055CE8B00F0B511 /* Matched_Betting_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8876702055CE8B00F0B511 /* Matched_Betting_CalculatorTests.swift */; };
 		3E88767C2055CE8B00F0B511 /* Matched_Betting_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E88767B2055CE8B00F0B511 /* Matched_Betting_CalculatorUITests.swift */; };
+		3EC9930A2057F6D70087F624 /* BetCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC993092057F6D70087F624 /* BetCalculator.swift */; };
+		3EC9930C2057F8400087F624 /* Bet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC9930B2057F8400087F624 /* Bet.swift */; };
+		3EC9930E2057FB790087F624 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC9930D2057FB790087F624 /* Utility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		3E8876772055CE8B00F0B511 /* Matched-Betting-CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Matched-Betting-CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E88767B2055CE8B00F0B511 /* Matched_Betting_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matched_Betting_CalculatorUITests.swift; sourceTree = "<group>"; };
 		3E88767D2055CE8B00F0B511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EC993092057F6D70087F624 /* BetCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BetCalculator.swift; sourceTree = "<group>"; };
+		3EC9930B2057F8400087F624 /* Bet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bet.swift; sourceTree = "<group>"; };
+		3EC9930D2057FB790087F624 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,9 @@
 				3E8876642055CE8B00F0B511 /* LaunchScreen.storyboard */,
 				3E8876672055CE8B00F0B511 /* Info.plist */,
 				3E7C1CE52056601E00B9C039 /* RatioButton.swift */,
+				3EC993092057F6D70087F624 /* BetCalculator.swift */,
+				3EC9930B2057F8400087F624 /* Bet.swift */,
+				3EC9930D2057FB790087F624 /* Utility.swift */,
 			);
 			path = "Matched-Betting-Calculator";
 			sourceTree = "<group>";
@@ -273,9 +282,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EC9930C2057F8400087F624 /* Bet.swift in Sources */,
 				3E88765E2055CE8B00F0B511 /* ViewController.swift in Sources */,
+				3EC9930E2057FB790087F624 /* Utility.swift in Sources */,
 				3E7C1CE62056601E00B9C039 /* RatioButton.swift in Sources */,
 				3E88765C2055CE8B00F0B511 /* AppDelegate.swift in Sources */,
+				3EC9930A2057F6D70087F624 /* BetCalculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
