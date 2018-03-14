@@ -31,7 +31,7 @@ class RatioButton : UIButton {
     override var isSelected: Bool {
         willSet (isSelected) {
             if(isSelected){
-                self.backgroundColor = UIColor.green
+                self.backgroundColor = UIColor(0.0, 122.0, 250.0, 1.0)
                 self.setTitleColor(UIColor.black, for: UIControlState.normal)
             }
             else {
