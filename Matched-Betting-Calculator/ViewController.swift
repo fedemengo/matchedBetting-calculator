@@ -8,6 +8,12 @@
 
 import UIKit
 
+extension UIColor {
+    convenience init(_ r: Double,_ g: Double,_ b: Double,_ a: Double) {
+        self.init(red: CGFloat(r/255), green: CGFloat(g/255), blue: CGFloat(b/255), alpha: CGFloat(a))
+    }
+}
+
 class ViewController: UIViewController {
     
     @IBOutlet weak var backStake: UITextField!
@@ -18,6 +24,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var layFee: UITextField!
 
     @IBOutlet weak var layStake: UILabel!
+    @IBOutlet weak var liability: UILabel!
     @IBOutlet weak var backWin: UILabel!
     @IBOutlet weak var layWin: UILabel!
     @IBOutlet weak var profit: UILabel!
@@ -66,22 +73,26 @@ class ViewController: UIViewController {
         let betType = (qualBetButton.isSelected ? qualBetButton.bet : freeBetButton.bet)
         let backStakeValue = Utility.parseDouble(string: backStake.text!)
         let backOddsValue = Utility.parseDouble(string: backOdds.text!)
-        let backCommisionValue = Utility.parseDouble(string: backFee.text!)
+        let backCommisionValue = Utility.parseDouble(string: backFee.text!)/100
         let layOddsValue = Utility.parseDouble(string: layOdds.text!)
-        let layCommissionValue = Utility.parseDouble(string: layFee.text!)
+        let layCommissionValue = Utility.parseDouble(string: layFee.text!)/100
         
         if BetManager.isValid(backStack: backStakeValue, backOdds: backOddsValue, backComm: backCommisionValue, layOdds: layOddsValue, layComm: layCommissionValue) {
             
             calculator.initBet(betType: betType!, backStake: backStakeValue, backOdds: backOddsValue, backCom: backCommisionValue, layOdds: layOddsValue, layCom: layCommissionValue)
-            
-            layStake.text = "\(calculator.getLayStake())"
-            backWin.text = calculator.caseBackWins()
-            layWin.text = calculator.caseLayWins()
-            
-            profit.font = UIFont.boldSystemFont(ofSize: 17)
-            profit.textColor = calculator.getProfit() > 0 ? UIColor.green : UIColor.red
-            profit.text = "\(calculator.getProfit())"
+            updateLabels(calculator: calculator)
         }
+    }
+    
+    func updateLabels(calculator: BetCalculator) -> Void {
+        layStake.text = "\(calculator.getLayStake())"
+        liability.text = "\(calculator.getLiability())"
+        backWin.text = calculator.caseBackWins()
+        layWin.text = calculator.caseLayWins()
+    
+        profit.font = UIFont.boldSystemFont(ofSize: 17)
+        profit.textColor = calculator.getProfit() > 0 ? UIColor(0.0, 204.0, 0.0, 1.0) : UIColor.red
+        profit.text = "\(calculator.getProfit())"
     }
     
 }
