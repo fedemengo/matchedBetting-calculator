@@ -60,4 +60,8 @@ class BetCalculator {
     func getProfit() -> Double {
         return self.profit!
     }
+    
+    func getLiability() -> Double {
+        return self.layLoses!
+    }
 }
