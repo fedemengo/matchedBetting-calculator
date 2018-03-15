@@ -30,11 +30,11 @@ class BetCalculator {
         
         if(betType == BET.QUAL){
             self.layStake = Utility.roundDouble(x: (backStake*(backOdds-backCom))/(layOdds-layCom))
-            self.backLoses = Utility.roundDouble(x: -backStake)
+            self.backLoses = Utility.roundDouble(x: backStake)
         }
         else {
             self.layStake = Utility.roundDouble(x:(backStake*(backOdds-1-backCom))/(layOdds-layCom))
-            self.backLoses = -0.0
+            self.backLoses = 0.0
         }
             
         self.backWins = Utility.roundDouble(x: backStake*(backOdds-1-backCom))
@@ -54,7 +54,7 @@ class BetCalculator {
     }
     
     func caseLayWins() -> String {
-        return "\(self.backLoses!) + \(self.layWins!) = \(Utility.roundDouble(x: self.backLoses!+self.layWins!))"
+        return "- \(self.backLoses!) + \(self.layWins!) = \(Utility.roundDouble(x: -self.backLoses!+self.layWins!))"
     }
     
     func getProfit() -> Double {
