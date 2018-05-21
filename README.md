@@ -1,9 +1,6 @@
 Matched-Betting-Calculator
 --------------------------
 
-Simple utility application for matched betting
+Simple utility application for matched betting. It helps to calculate the proper stake for both qualifying and free bets.
 
--	Qualifying bet: calculate the proper lay stake to lose as less money as possible
--	Free bet: calculate the proper lay stake to win as much money as possible
-
-![v1.2](https://github.com/fedemengo/Matched-Betting-Calculator/blob/master/view/1.2.png)
+<!--![v1.2](https://github.com/fedemengo/Matched-Betting-Calculator/blob/master/view/1.2.png)-->
